@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(135deg, yellow, orange);
+}
+
+.Container-login{
+    max-width: 500px;
+    width: 100%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.Container-login .title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+}
+.Container-login form .dados-login{
+    width: 800px;
+    display:block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0 0px 0;
+    margin-left: 25px;
+}
+form .dados-login .box{
+    margin-bottom: 15px;
+    width:calc(100% / 2 - 20px);
+}
+form .dados-login .box:hover{
+    transition: all 0.5s ease;
+    letter-spacing: 2px;
+}
+.dados-login .box input{
+    height: 40px;
+    width:100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 3px;
+}
+.dados-login .box input:hover{
+    transition: all 0.3s ease-in;
+    letter-spacing: 1px;
+}
+.dados-login .box .dados{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.dados-login .box input:focus,
+.dados-login .box input:valid{
+    border-color: orange;
+} 
+
+form .btn-login{
+    height:45px;
+    margin:45px 0;    
+}
+form .btn-login input{
+    height:100%;
+    width: 48%;
+    outline:none;
+    color:#fff;
+    border-radius: 5px;
+    border:none;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(165deg, orange,yellow);
+    transition: all 0.5s ease;
+    letter-spacing: 2px;
+}
+form .btn-login input:hover{
+    background: linear-gradient(-165deg, orange,yellow);
+}
+
+.novo-cadastro{
+    display: flex;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.novo-login{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+.cadastro{
+    margin-left:100px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+.cadastro a{
+    text-decoration: none;
+    color:black;
+}
+.cadastro a:hover{
+    transition: all 0.5s ease;
+    letter-spacing: 2px;
+}
